@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1048344568355",
+    "project_id": "shop-db2b4",
+    "storage_bucket": "shop-db2b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048344568355:android:3015fa58548f36b4894796",
+        "android_client_info": {
+          "package_name": "com.example.foodshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048344568355-ehu868gf9ec0jojiqq0lm9qhu483c6n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVUE1EGXacTBIGHhNBaRMCh1Pk4oEdxjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048344568355-ehu868gf9ec0jojiqq0lm9qhu483c6n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048344568355:android:f5542a52118c2ae1894796",
+        "android_client_info": {
+          "package_name": "com.example.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048344568355-ehu868gf9ec0jojiqq0lm9qhu483c6n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVUE1EGXacTBIGHhNBaRMCh1Pk4oEdxjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048344568355-ehu868gf9ec0jojiqq0lm9qhu483c6n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
