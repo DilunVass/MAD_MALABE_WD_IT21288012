@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="buttonCorners">5dp</dimen>
+    <dimen name="add_recepie_title_font_size">34sp</dimen>
+    <dimen name="add_recepie_tag_text_size">24sp</dimen>
+    <dimen name="add_recepie_sample_txtsize">16sp</dimen>
+    <dimen name="add_recepie_submit_btn_size">20sp</dimen>
+    <dimen name="add_recepie_cancel_btn_size">20sp</dimen>
 </resources>

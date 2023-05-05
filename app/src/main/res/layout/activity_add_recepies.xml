@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="417dp"
+        android:layout_height="893dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_btn" />
+
+    <TextView
+        android:id="@+id/recepie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="@string/add_recepies_heading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_recepie_title_font_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ImageView
+        android:id="@+id/back7"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="@string/submit_res_btn"
+        android:textSize="@dimen/add_recepie_submit_btn_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="@string/cancel_res_values"
+        android:textSize="@dimen/add_recepie_cancel_btn_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="361dp"
+        android:layout_height="767dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/your_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="@string/res_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_recepie_tag_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="enter name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toEndOf="@+id/your_info2"
+        app:layout_constraintTop_toBottomOf="@+id/recepie" />
+
+    <EditText
+        android:id="@+id/edcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="enter category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toEndOf="@+id/your_info2"
+        app:layout_constraintTop_toBottomOf="@+id/recepie" />
+
+    <EditText
+        android:id="@+id/eddesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="enter des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toEndOf="@+id/your_info2"
+        app:layout_constraintTop_toBottomOf="@+id/recepie" />
+
+    <TextView
+        android:id="@+id/your_info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_recepie_tag_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/your_info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="Description(optional)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_recepie_tag_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <TextView
+        android:id="@+id/your_info6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="@string/sample_res_photos"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_recepie_tag_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <Button
+        android:id="@+id/imagess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="312dp"
+        android:text="Add images"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submitrecipie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:text="Dead"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

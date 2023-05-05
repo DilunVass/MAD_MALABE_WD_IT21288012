@@ -1,0 +1,73 @@
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@color/g_card_background"
+
+android:elevation="0dp"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_favorite"
+        android:layout_width="386dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/blury_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="282dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="Scotch Premium"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_favorite"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btn_see_product"
+        android:layout_width="83dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/blue_background"
+
+        android:backgroundTint="@color/btn_signup"
+        android:fontFamily="@font/tiltneon_regular"
+        android:text="favourite"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/img_favorite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="34dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ProgressBar
+                android:id="@+id/Maincategoryprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/specialWakers"
+                android:layout_width="388dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BestDeals"
+                android:layout_width="111dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_thin"
+                android:text="Best Deals"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/specialWakers" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/BestFooddeals"
+                android:layout_width="394dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="24dp"
+
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/specialWakers"
+                app:layout_constraintTop_toBottomOf="@id/BestDeals" />
+
+            <TextView
+                android:id="@+id/MostPopulartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_thin"
+                android:text="Most popular"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BestFooddeals" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mostPopular"
+                android:layout_width="399dp"
+                android:layout_height="588dp"
+
+                android:layout_marginTop="28dp"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MostPopulartext"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

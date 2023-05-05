@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardImage"
+            android:layout_width="408dp"
+            android:layout_height="192dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="192dp" />
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_close_24" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CardImage">
+
+            <TextView
+                android:id="@+id/tvProduct_name"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="THaruka"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvProduct_price"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="600$"
+                android:textColor="@color/g_blue_gray200" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvProduct_desc"
+            style="@style/h3"
+            android:layout_width="378dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textColor="@color/g_blue_gray200"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardImage"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_width="399dp"
+            android:layout_height="181dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/tvProduct_desc"
+            app:layout_constraintVertical_bias="0.277"
+            tools:listitem="@layout/reviewitem" />
+
+        <EditText
+            android:id="@+id/Comment"
+            android:layout_width="272dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="8dp"
+            android:text="Enter the review"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnaddtofav"
+            app:layout_constraintEnd_toStartOf="@+id/SubmitBTN"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnaddtofav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Add To Cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/SubmitBTN"
+            android:layout_width="87dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="76dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

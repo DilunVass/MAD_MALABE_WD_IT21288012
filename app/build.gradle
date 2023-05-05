@@ -1,10 +1,10 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
     id 'dagger.hilt.android.plugin'
-    id 'com.google.gms.google-services'
 }
 
 android {
@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId "com.example.foodshop"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -42,17 +42,24 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-auth:21.1.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
     apply plugin :"kotlin-kapt"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
 
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    //Navigation component
+    def nav_version = "2.5.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     //loading button
     implementation 'br.com.simplepass:loading-button-android:2.2.0'
 
@@ -62,16 +69,29 @@ dependencies {
     //circular image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //firebase
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.0.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
+
+    //koin
+    implementation "org.koin:koin-androidx-viewmodel:2.0.1"
+    implementation "org.koin:koin-android:2.0.1"
+
+
     //viewpager2 indicatior
     implementation 'io.github.vejei.viewpagerindicator:viewpagerindicator:1.0.0-alpha.1'
 
     //stepView
     implementation 'com.shuhart.stepview:stepview:1.5.1'
 
+    //Dagger hilt
+    implementation 'com.google.dagger:hilt-android:2.38.1'
+    kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
     //Android Ktx
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
 
-    //Dagger hilt
-    implementation "com.google.dagger:hilt-android:2.38.1"
-    kapt "com.google.dagger:hilt-compiler:2.38.1"
+
 }

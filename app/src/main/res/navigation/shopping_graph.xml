@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopping_graph"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.foodshop2.fragments.shopping.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment2_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment2"
+        android:name="com.example.foodshop2.fragments.shopping.cartFragment"
+        android:label="cartFragment"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment2_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.foodshop2.fragments.shopping.profileFragment"
+        android:label="profileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment2_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.foodshop2.fragments.shopping.searchFragment"
+        android:label="searchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.foodshop.fragments.ProductDetailsFragment"
+        android:label="ProductDetailsFragment"
+        tools:layout="@layout/fragment_product">
+        <argument
+            android:name="product"
+            app:argType="com.example.foodshop.data.Product" />
+    </fragment>
+</navigation>

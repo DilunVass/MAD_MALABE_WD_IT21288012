@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/g_white"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/favProduct"
+            android:layout_width="94dp"
+            android:layout_height="81dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/blury_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundimageview" />
+
+        <TextView
+            android:id="@+id/tvProductCartName"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Pol Karu"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/favProduct"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.627" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

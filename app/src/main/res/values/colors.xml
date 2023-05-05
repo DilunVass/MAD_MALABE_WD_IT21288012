@@ -22,4 +22,8 @@
     <color name="g_red">#FF0000</color>
     <color name="g_gray500">#969899</color>
     <color name="g_orange_yellow">#F8BA00</color>
+    <color name="cream_yellow">#fffac9</color>
+    <color name="orange_">#FF5F1F</color>
+    <color name="orange_btn">#C04000</color>
+    <color name="btn_signup">#f19d2c</color>
 </resources>
