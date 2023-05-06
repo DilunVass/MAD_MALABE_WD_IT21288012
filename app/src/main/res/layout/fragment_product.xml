@@ -57,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="THaruka"
+                android:fontFamily="@font/tiltneon_regular"
                 android:textStyle="bold" />
 
             <TextView
@@ -65,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="600$"
+                android:visibility="invisible"
                 android:textColor="@color/g_blue_gray200" />
 
 
@@ -78,6 +80,7 @@
             android:layout_height="91dp"
             android:layout_marginStart="10sp"
             android:layout_marginEnd="10sp"
+            android:fontFamily="@font/tiltneon_regular"
             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             android:textColor="@color/g_blue_gray200"
             android:textSize="12sp"
@@ -107,6 +110,7 @@
             android:layout_height="41dp"
             android:layout_marginBottom="8dp"
             android:text="Enter the review"
+            android:fontFamily="@font/tiltneon_regular"
             android:textSize="15dp"
             app:layout_constraintBottom_toTopOf="@+id/btnaddtofav"
             app:layout_constraintEnd_toStartOf="@+id/SubmitBTN"
@@ -118,7 +122,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Add To Cart"
+            android:text="Add To Favourites"
+            android:backgroundTint="@color/btn_signup"
+            android:fontFamily="@font/tiltneon_regular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -130,6 +136,8 @@
             android:layout_height="39dp"
             android:layout_marginBottom="76dp"
             android:text="Add"
+            android:backgroundTint="@color/btn_signup"
+            android:fontFamily="@font/tiltneon_regular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.972"

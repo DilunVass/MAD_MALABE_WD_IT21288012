@@ -1,8 +1,9 @@
 buildscript {
     dependencies {
-        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.1'
-        classpath 'com.google.gms:google-services:4.3.13'
-
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.5'
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "com.android.tools.build:gradle:7.0.3"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20'
         def nav_version = "2.5.0"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
     }

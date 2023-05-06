@@ -35,7 +35,7 @@
         android:id="@+id/searchFragment"
         android:name="com.example.foodshop2.fragments.shopping.searchFragment"
         android:label="searchFragment"
-        tools:layout="@layout/fragment_search">
+        tools:layout="@layout/myrecipie">
         <action
             android:id="@+id/action_searchFragment_to_productDetailsFragment"
             app:destination="@id/productDetailsFragment" />

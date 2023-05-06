@@ -25,29 +25,18 @@
                 android:layout_height="match_parent">
 
 
-                <ImageView
-                    android:id="@+id/imageCloseCart"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/ic_baseline_close_24"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:tint="@color/black" />
-
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="My Favourites"
+                    android:text="My Recipies"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="@id/imageCloseCart"
-                    app:layout_constraintStart_toStartOf="@id/imageCloseCart"
-                    app:layout_constraintTop_toTopOf="@id/imageCloseCart" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -76,15 +65,15 @@
             app:layout_constraintGuide_percent="0.68" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvCart"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:id="@+id/rvrecipie"
+            android:layout_width="383dp"
+            android:layout_height="616dp"
             android:layout_marginTop="5dp"
             app:layout_constraintBottom_toTopOf="@id/bottomGuideLine"
             app:layout_constraintEnd_toEndOf="@id/rightGuideLine"
             app:layout_constraintStart_toStartOf="@id/leftGuideLine"
             app:layout_constraintTop_toBottomOf="@id/progressbarCart"
-            tools:listitem="@layout/fav_product_item" />
+            tools:listitem="@layout/best_deals_rv_item" />
 
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -98,63 +87,7 @@
             app:layout_constraintTop_toBottomOf="@id/toolbarCart" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/totalBoxContainer"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/total_box_background"
-            app:layout_constraintEnd_toEndOf="@id/rightGuideLine"
-            app:layout_constraintStart_toStartOf="@id/leftGuideLine"
-            app:layout_constraintTop_toBottomOf="@id/bottomGuideLine">
 
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/sf_pro_display"
-                android:text="Total"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <TextView
-                android:id="@+id/tvTotalPrice"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="15dp"
-                android:fontFamily="@font/sf_pro_display"
-                android:text="3 items"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
-            android:id="@+id/buttonCheckout"
-            style="@style/blueButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginBottom="20dp"
-            android:text="Check out"
-            app:layout_constraintEnd_toEndOf="@id/rightGuideLine"
-            app:layout_constraintStart_toStartOf="@id/leftGuideLine"
-            app:layout_constraintTop_toBottomOf="@id/totalBoxContainer"
-            app:spinning_bar_color="@color/white" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -186,17 +119,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_light"
-                android:gravity="center"
-                android:text="Your shopping cart is empty"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                app:layout_constraintTop_toBottomOf="@id/imageEmptyBoxTexture"
-                app:layout_constraintStart_toStartOf="@id/imageEmptyBoxTexture"
-                app:layout_constraintEnd_toEndOf="@id/imageEmptyBoxTexture"/>
+
 
 
 

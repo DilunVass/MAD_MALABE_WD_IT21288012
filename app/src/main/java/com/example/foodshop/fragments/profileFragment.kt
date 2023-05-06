@@ -16,6 +16,7 @@ import com.example.foodshop.data.Product
 import com.example.foodshop.data.Review
 import com.example.foodshop.databinding.FragmentProductBinding
 import com.example.foodshop.databinding.FragmentProfileBinding
+import com.example.foodshop.fragments.MyrecipieFragment
 import com.example.foodshop.viewModel.RecipieAddviewmodel
 import java.util.*
 
@@ -30,6 +31,8 @@ class profileFragment : Fragment() {
     ): View? {
         binding = FragmentProfileBinding.inflate(inflater)
         return binding.root
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -68,6 +71,10 @@ class profileFragment : Fragment() {
             intent.type = "image/*"
             selectImagesActivityResult.launch(intent)
         }
+binding.list.setOnClickListener{
+    navigateToAnotherFragment()
+}
+
 
         binding.submitrecipie.setOnClickListener {
 
@@ -105,6 +112,18 @@ class profileFragment : Fragment() {
 
 
 
+    }
+
+    private fun navigateToAnotherFragment() {
+        val fragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        val fragment = MyrecipieFragment()
+
+
+        fragmentTransaction.replace(R.id.ttt, fragment)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 
 }

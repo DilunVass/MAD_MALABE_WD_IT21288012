@@ -5,7 +5,7 @@
     android:id = "@+id/homeFragment2"/>
     <item android:title="search"
         android:icon="@drawable/ic_search"
-        android:id = "@+id/search"/>
+        android:id = "@+id/searchFragment"/>
     <item android:title="cart"
         android:icon="@drawable/ic_cart"
         android:id = "@+id/cartFragment2"/>
