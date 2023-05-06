@@ -11,7 +11,7 @@ import com.example.foodshop.databinding.BestDealsRvItemBinding
 import com.example.foodshop.databinding.ProductRvItemBinding
 import com.example.foodshop.databinding.SpecialRvItemBinding
 
-class MostPopularAdapter :RecyclerView.Adapter<MostPopularAdapter.MostPopularViewHolder>() {
+class MostPopularAdapter :RecyclerView.Adapter<MostPopularAdapter.MostPopularViewHolder>() { //Most popular adapter
     inner class MostPopularViewHolder(private val binding: ProductRvItemBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(product: Product){
             binding.apply {
