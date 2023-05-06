@@ -20,7 +20,7 @@ import com.example.foodshop.fragments.MyrecipieFragment
 import com.example.foodshop.viewModel.RecipieAddviewmodel
 import java.util.*
 
-
+//Recipie management
 class profileFragment : Fragment() {
     private lateinit var binding : FragmentProfileBinding
 
